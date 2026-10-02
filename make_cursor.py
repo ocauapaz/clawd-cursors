@@ -269,7 +269,7 @@ def ani_bytes(frames, hot, rates):
     return b"RIFF" + struct.pack("<I", len(body)) + body
 
 
-INF = r"""; Clawd cursor scheme - botao direito > Instalar
+INF = r"""; Clawd cursor scheme - right-click > Install
 [Version]
 signature="$CHICAGO$"
 
