@@ -1,0 +1,60 @@
+; Clawd cursor scheme - botao direito > Instalar
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg, Wreg
+
+[DefaultInstall.NT]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg, Wreg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\clawd_arrow.cur,%10%\%CUR_DIR%\clawd_help.cur,%10%\%CUR_DIR%\clawd_appstarting.ani,%10%\%CUR_DIR%\clawd_wait.ani,%10%\%CUR_DIR%\clawd_crosshair.cur,%10%\%CUR_DIR%\clawd_ibeam.cur,%10%\%CUR_DIR%\clawd_nwpen.cur,%10%\%CUR_DIR%\clawd_no.cur,%10%\%CUR_DIR%\clawd_sizens.cur,%10%\%CUR_DIR%\clawd_sizewe.cur,%10%\%CUR_DIR%\clawd_sizenwse.cur,%10%\%CUR_DIR%\clawd_sizenesw.cur,%10%\%CUR_DIR%\clawd_sizeall.cur,%10%\%CUR_DIR%\clawd_uparrow.cur,%10%\%CUR_DIR%\clawd_hand.cur,%10%\%CUR_DIR%\clawd_pin.cur,%10%\%CUR_DIR%\clawd_person.cur"
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\clawd_arrow.cur"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\clawd_help.cur"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\clawd_appstarting.ani"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\clawd_wait.ani"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\clawd_crosshair.cur"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\clawd_ibeam.cur"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\clawd_nwpen.cur"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\clawd_no.cur"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\clawd_sizens.cur"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\clawd_sizewe.cur"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\clawd_sizenwse.cur"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\clawd_sizenesw.cur"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\clawd_sizeall.cur"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\clawd_uparrow.cur"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\clawd_hand.cur"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\clawd_pin.cur"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\clawd_person.cur"
+
+[Scheme.Cur]
+clawd_arrow.cur
+clawd_help.cur
+clawd_appstarting.ani
+clawd_wait.ani
+clawd_crosshair.cur
+clawd_ibeam.cur
+clawd_nwpen.cur
+clawd_no.cur
+clawd_sizens.cur
+clawd_sizewe.cur
+clawd_sizenwse.cur
+clawd_sizenesw.cur
+clawd_sizeall.cur
+clawd_uparrow.cur
+clawd_hand.cur
+clawd_pin.cur
+clawd_person.cur
+
+[Strings]
+CUR_DIR     = "Cursors\Clawd"
+SCHEME_NAME = "Clawd"
